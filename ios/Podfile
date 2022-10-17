@@ -1,0 +1,39 @@
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+require_relative '../node_modules/react-native-unimodules/cocoapods.rb'
+
+platform :ios, '12.4'
+
+$FirebaseSDKVersion = '10.0.0'
+
+target 'Instadating' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  config = use_native_modules!
+  use_react_native!(
+    :path => config[:"reactNativePath"]
+  )
+  pod 'ExpoModulesCore', :modular_headers => true
+  pod 'GoogleUtilities', :modular_headers => true
+  $RNFirebaseAsStaticFramework = true
+
+  # Enables Flipper.
+  #
+  # Note that if you have use_frameworks! enabled, Flipper will not work and
+  # you should disable these next few lines.
+ use_flipper!
+  post_install do |installer|
+    flipper_post_install(installer)
+  end
+
+  pod 'ReactNativeART', :path => '../node_modules/@react-native-community/art'
+
+  use_unimodules!
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
+  pod 'RNLocalize', :path => '../node_modules/react-native-localize'
+ 
+
+end
+

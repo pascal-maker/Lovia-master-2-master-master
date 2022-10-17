@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "436353876015",
+    "firebase_url": "https://lovia-18d66-default-rtdb.firebaseio.com",
+    "project_id": "lovia-18d66",
+    "storage_bucket": "lovia-18d66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436353876015:android:0905e1cff95430dcc746da",
+        "android_client_info": {
+          "package_name": "com.lovialove"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436353876015-br0hsaabpbs24d21gjtrs5217fl2ndp9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcoyRMWdsZVHehStfTaG2zQyxXGkJ03BQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436353876015-br0hsaabpbs24d21gjtrs5217fl2ndp9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "436353876015-6aqdc783o9ju4kg0q0cfu5ev2d3nia1d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.lovialove"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
